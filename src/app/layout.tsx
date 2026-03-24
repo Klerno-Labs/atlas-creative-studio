@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Metadata } from "next";
 
+import { z } from "zod";
 export const metadata: Metadata = {
   title: "Atlas Creative Studio",
   description: "Award-winning creative studio showcasing exceptional design work across multiple disciplines.",
