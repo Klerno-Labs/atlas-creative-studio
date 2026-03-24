@@ -42,7 +42,7 @@ const ContactForm = () => {
       <Input id="email" label="Email" type="email" required onChange={handleChange} />
       <Textarea id="message" label="Message" required onChange={handleChange} />
       <Button text={isSubmitting ? "Sending..." : "Send Message"} variant="primary" />
-      {isSuccess && <p className="mt-4 text-green-500">Thank you! We'll be in touch soon.</p>}
+      {isSuccess && <p className="mt-4 text-green-500">Thank you! We&apos;ll be in touch soon.</p>}
       {error && <p className="mt-4 text-red-500">{error}</p>}
       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
     </form>
