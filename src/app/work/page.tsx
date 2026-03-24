@@ -1,17 +1,18 @@
-import { BentoGrid } from "@/components/sections/bento-grid";
+import { Metadata } from "next";
+import { images } from "@/config/images";
 
-export const metadata = {
-  title: "Our Work | Atlas Creative Studio",
-  description: "Explore our portfolio showcasing exceptional design work across multiple disciplines.",
+export const metadata: Metadata = {
+  title: "Our Work | Portfolio | Atlas Creative Studio",
+  description: "Explore our latest projects in web design, branding, and development. See how we craft digital solutions.",
   openGraph: {
     title: "Our Work | Atlas Creative Studio",
-    description: "Explore our portfolio showcasing exceptional design work across multiple disciplines.",
+    description: "Explore our latest projects in web design, branding, and development.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/work`,
     images: [
       {
-        url: "https://mfile.z.ai/1774356988974-7649c16cb4a6458ba29c52671b71e693.png?ufileattname=20260324205620dca57c9d71a749cb_watermark.png",
+        url: images.gallery_1.src,
         width: 1200,
-        height: 800,
-        alt: "Abstract geometric sculpture on a modern desk in a dimly lit studio",
+        height: 630,
       },
     ],
   },
@@ -19,9 +20,23 @@ export const metadata = {
 
 export default function WorkPage() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center py-16">Our Work</h1>
-      <BentoGrid />
+    <div className="pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-12">
+          <h1 className="font-display text-4xl md:text-6xl font-bold mb-4">
+            Selected Work
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            A curated collection of projects that define our craft.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Placeholder for dynamic grid */}
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="aspect-[4/5] bg-muted rounded-xl animate-pulse" />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

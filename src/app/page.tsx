@@ -1,21 +1,19 @@
-"use client";
-
-import { HeroSection } from "@/components/sections/hero";
+import { Hero } from "@/components/sections/hero";
 import { Marquee } from "@/components/sections/marquee";
-import { CTASection } from "@/components/sections/cta";
-import { images } from "@/config/images";
+import { WorkSection } from "@/components/sections/work";
+import { ServicesSection } from "@/components/sections/services";
+import { ProcessSection } from "@/components/sections/process";
+import { ContactSection } from "@/components/sections/contact-section";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection
-        title="Designing the Future of Creativity"
-        subtitle="Award-winning creative studio specializing in digital experience, branding, and 3D motion."
-        ctaText="View Work"
-        ctaLink="/work"
-      />
+    <>
+      <Hero />
       <Marquee />
-      <CTASection />
-    </main>
+      <WorkSection />
+      <ServicesSection />
+      <ProcessSection />
+      <ContactSection />
+    </>
   );
 }

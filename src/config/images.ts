@@ -1,11 +1,12 @@
-import { z } from "zod";
-
 // ── Image Configuration ──────────────────────────────────────────────
 // ✏️  HOW TO CHANGE IMAGES:
 // 1. Find the slot you want to change below (e.g. "hero", "about", "service-1")
 // 2. Replace the "src" URL with your own image URL
 // 3. Update the "alt" text to describe the new image
 // 4. Save — every component on the site updates automatically
+//
+// All components import from this file. This is the ONLY file you need
+// to edit to swap any image on the entire website.
 
 export const images = {
   // Homepage hero banner — the first image visitors see [cogview]
@@ -112,4 +113,5 @@ export const images = {
     height: 800,
   },
 } as const;
+
 export type ImageSlot = keyof typeof images;
