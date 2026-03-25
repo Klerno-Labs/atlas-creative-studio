@@ -1,9 +1,13 @@
-export default function CTASection() {
+const CTASection = () => {
   return (
-    <section className="py-16 bg-primary text-white text-center">
+    <section className="py-16 bg-gray-900 text-white text-center">
       <h2 className="text-3xl font-bold">Ready to Start Your Project?</h2>
       <p className="mt-4">Get in touch with us today to discuss your ideas and bring them to life.</p>
-      <a href="/contact" className="mt-6 inline-block bg-white text-primary px-6 py-3 rounded-lg hover:bg-opacity-80 transition">Contact Us</a>
+      <a href="/contact" className="mt-6 inline-block px-6 py-3 text-lg font-bold text-black bg-yellow-500 rounded-lg hover:bg-yellow-400 transition">
+        Contact Us
+      </a>
     </section>
   );
-}
+};
+
+export default CTASection;

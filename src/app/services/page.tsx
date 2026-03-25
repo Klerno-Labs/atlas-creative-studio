@@ -1,21 +1,20 @@
-import { siteConfig } from "@/config/site";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+export const metadata = {
+  title: "Atlas Creative Studio | Services",
+  description: "Discover the range of services offered by our award-winning creative studio.",
+  openGraph: {
+    title: "Atlas Creative Studio | Services",
+    description: "Discover the range of services offered by our award-winning creative studio.",
+    images: ["/hero-bg.jpg"],
+  },
+};
 
 export default function Services() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        <h1 className="text-4xl font-bold text-center">Our Services</h1>
-        <section className="py-16">
-          <h2 className="text-3xl font-bold text-center">What We Offer</h2>
-          <p className="text-lg text-center">
-            Atlas Creative Studio specializes in branding, web design, and creative strategy. Our team is dedicated to delivering exceptional results tailored to your needs.
-          </p>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <div>
+      <h1 className="text-4xl font-bold text-center py-16">Our Services</h1>
+      <p className="text-lg text-center max-w-2xl mx-auto">
+        We offer a range of creative services tailored to meet your needs, including Branding, Web Design, and Strategy.
+      </p>
+    </div>
   );
 }

@@ -1,5 +1,9 @@
-export async function POST(req: Request) {
-  const data = await req.json();
-  // Here you would typically send the data to your email service or database
-  return new Response(JSON.stringify({ success: true }), { status: 200 });
+import { NextResponse } from "next/server";
+
+export async function POST(request: Request) {
+  const data = await request.json();
+  // Process the form data here (e.g., send an email, save to a database)
+  console.log(data); // For demonstration purposes
+
+  return NextResponse.json({ message: "Form submitted successfully!" });
 }

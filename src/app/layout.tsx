@@ -1,19 +1,16 @@
-import { Metadata } from "next";
-import { cn } from "@/lib/cn";
+"use client";
+
+import { ReactNode } from "react";
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
 import "@/styles/globals.css";
 
-export const metadata: Metadata = {
-  title: "Atlas Creative Studio",
-  description: "Award-winning creative studio showcasing exceptional design work across multiple disciplines.",
-  metadataBase: new URL("https://example.com"),
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={cn("bg-primary text-text")}>
-        {children}
-      </body>
-    </html>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow pt-20">{children}</main>
+      <Footer />
+    </div>
   );
 }

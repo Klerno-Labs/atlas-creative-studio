@@ -1,17 +1,20 @@
-import { siteConfig } from "@/config/site";
-import Navbar from "@/components/ui/Navbar";
 import ContactForm from "@/components/forms/ContactForm";
-import Footer from "@/components/ui/Footer";
+
+export const metadata = {
+  title: "Atlas Creative Studio | Contact",
+  description: "Get in touch with us to start your project.",
+  openGraph: {
+    title: "Atlas Creative Studio | Contact",
+    description: "Get in touch with us to start your project.",
+    images: ["/hero-bg.jpg"],
+  },
+};
 
 export default function Contact() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        <h1 className="text-4xl font-bold text-center">Contact Us</h1>
-        <ContactForm />
-      </main>
-      <Footer />
-    </>
+    <div>
+      <h1 className="text-4xl font-bold text-center py-16">Contact Us</h1>
+      <ContactForm />
+    </div>
   );
 }

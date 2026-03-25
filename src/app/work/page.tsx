@@ -1,17 +1,19 @@
-import { siteConfig } from "@/config/site";
-import Navbar from "@/components/ui/Navbar";
 import WorkGrid from "@/components/sections/WorkGrid";
-import Footer from "@/components/ui/Footer";
+
+export const metadata = {
+  title: "Atlas Creative Studio | Work",
+  description: "Explore our portfolio showcasing exceptional design work across multiple disciplines.",
+  openGraph: {
+    title: "Atlas Creative Studio | Work",
+    description: "Explore our portfolio showcasing exceptional design work across multiple disciplines.",
+    images: ["/hero-bg.jpg"],
+  },
+};
 
 export default function Work() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        <h1 className="text-4xl font-bold text-center">{siteConfig.name} Work</h1>
-        <WorkGrid />
-      </main>
-      <Footer />
-    </>
+    <div>
+      <WorkGrid />
+    </div>
   );
 }

@@ -1,21 +1,20 @@
-import { siteConfig } from "@/config/site";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+export const metadata = {
+  title: "Atlas Creative Studio | About",
+  description: "Learn more about our team and the philosophy behind our award-winning creative studio.",
+  openGraph: {
+    title: "Atlas Creative Studio | About",
+    description: "Learn more about our team and the philosophy behind our award-winning creative studio.",
+    images: ["/hero-bg.jpg"],
+  },
+};
 
 export default function About() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        <h1 className="text-4xl font-bold text-center">About Us</h1>
-        <section className="py-16">
-          <h2 className="text-3xl font-bold text-center">Who We Are</h2>
-          <p className="text-lg text-center">
-            At Atlas Creative Studio, we are a passionate team of designers and strategists dedicated to crafting exceptional experiences. Our journey began with a vision to redefine creativity in the digital space.
-          </p>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <div>
+      <h1 className="text-4xl font-bold text-center py-16">About Us</h1>
+      <p className="text-lg text-center max-w-2xl mx-auto">
+        We are a passionate team of creative professionals dedicated to delivering exceptional design work across multiple disciplines.
+      </p>
+    </div>
   );
 }

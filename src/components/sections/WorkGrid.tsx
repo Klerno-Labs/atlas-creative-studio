@@ -2,11 +2,11 @@
 
 import { images } from "@/config/images";
 
-const FeaturedWork = () => {
+const WorkGrid = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center">Featured Work</h2>
+        <h2 className="text-3xl font-bold text-center">Our Work</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="relative overflow-hidden rounded-xl shadow-md">
             <img src={images["gallery-1"].src} alt={images["gallery-1"].alt} className="object-cover w-full h-64" />
@@ -32,4 +32,4 @@ const FeaturedWork = () => {
   );
 };
 
-export default FeaturedWork;
+export default WorkGrid;
