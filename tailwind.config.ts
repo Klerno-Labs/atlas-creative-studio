@@ -2,30 +2,42 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#050505",       // Deepest Black
-        secondary: "#F4F4F5",     // Off-White
-        accent: "#FF3366",        // Electric Rose
-        surface: "#121212",       // Surface Layer
-        surfaceHover: "#1A1A1A",  // Surface Hover
-        muted: "#9CA3AF",         // Gray text
+        primary: "#D4AF37",
+        secondary: "#0F0F0F",
+        surface: "#FFFFFF",
+        text: "#F2F2F2",
+        muted: "#8C8C8C",
+        accent: "#D4AF37",
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "sans-serif"],
-        body: ["var(--font-body)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
+        heading: ["Syne", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+        accent: ["Space Mono", "monospace"],
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      spacing: {
+        "spacing-unit": "8px",
+        "spacing-section": "12vh",
+        "spacing-card": "2rem",
+      },
+      borderRadius: {
+        none: "0px",
+      },
+      boxShadow: {
+        card: "0 0 20px rgba(212, 175, 55, 0.1)",
+      },
+      transitionTimingFunction: {
+        fast: "0.2s ease-in-out",
+        slow: "0.5s cubic-bezier",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

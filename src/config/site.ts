@@ -5,17 +5,17 @@ export const siteConfig = {
   phone: "(512) 555-0199",
   address: "4521 Westheimer Rd, Suite 200, Houston, TX 77027",
   hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm, Sun: Closed",
-  socialLinks: {
-    facebook: "https://facebook.com/atlascreativestudio",
-    instagram: "https://instagram.com/atlascreativestudio",
+  links: {
     twitter: "https://twitter.com/atlascreative",
+    instagram: "https://instagram.com/atlascreative",
+    facebook: "https://facebook.com/atlascreative",
   },
-  navLinks: [
-    { name: "Home", href: "/" },
-    { name: "Work", href: "/work" },
-    { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
-    { name: "Process", href: "/process" },
-    { name: "Contact", href: "/contact" },
+  navigation: [
+    { label: "Home", href: "/" },
+    { label: "Work", href: "/work" },
+    { label: "Services", href: "/services" },
+    { label: "About", href: "/about" },
+    { label: "Process", href: "/process" },
+    { label: "Contact", href: "/contact" },
   ],
 };
