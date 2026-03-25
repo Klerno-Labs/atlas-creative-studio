@@ -1,16 +1,23 @@
-"use client";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-import { ReactNode } from "react";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
-import "@/styles/globals.css";
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow pt-20">{children}</main>
-      <Footer />
-    </div>
+    <html lang="en" className={inter.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      </head>
+      <body className="font-sans antialiased text-gray-900 bg-white">
+        {children}
+      </body>
+    </html>
   );
 }

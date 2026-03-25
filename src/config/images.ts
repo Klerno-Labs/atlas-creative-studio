@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
+
 export const images = {
-  hero: {
+  "hero": {
     src: "https://mfile.z.ai/1774397722224-bbf5612b421c4b7b89922b9bd3fa92d9.png?ufileattname=2026032508151447f88479a58644c4_watermark.png",
     alt: "Creative studio environment with glowing digital concept map on a conference table",
     width: 1200,
@@ -11,7 +13,7 @@ export const images = {
     width: 1200,
     height: 800,
   },
-  about: {
+  "about": {
     src: "https://mfile.z.ai/1774397722469-9f043bd2029842289875f1883901e2c0.png?ufileattname=20260325081515ab6ab28abb8842be_watermark.png",
     alt: "Creative professionals collaborating over a digital tablet in a bright office",
     width: 1200,
@@ -59,7 +61,7 @@ export const images = {
     width: 1200,
     height: 800,
   },
-  cta: {
+  "cta": {
     src: "https://mfile.z.ai/1774397749291-999a87999c544d868cdeef93b28157e3.png?ufileattname=20260325081541570b48d0655c45d1_watermark.png",
     alt: "Glossy black wall with white artistic text brushstroke",
     width: 1200,
