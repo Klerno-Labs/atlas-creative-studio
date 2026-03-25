@@ -1,11 +1,10 @@
 'use client';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, ArrowUp } from 'lucide-react';
 
 const heroImages = [
-  { src: require('@/config/images').images['hero'].src, width: 1600, height: 1200, priority: true },
+  { src: require('@/config/images').images['hero'].src, width: 1600, height: 1200,: true },
   { src: require('@/config/images').images['hero-alt'].src, width: 1600, height: 1200 },
 ];
 
@@ -65,12 +64,11 @@ export default function Hero() {
 
       {/* Hero Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src={heroImages[0].src}
           alt="Abstract studio atmosphere"
           width={heroImages[0].width}
-          height={heroImages[0].height}
-          priority={heroImages[0].priority}
+          height={heroImages[0].height}={heroImages[0].priority}
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary" />

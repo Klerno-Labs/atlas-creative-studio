@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -53,7 +52,7 @@ export default function ServicePreview() {
           {services.map((service, idx) => (
             <Link key={service.id} href={service.link} className="group block">
               <div className="aspect-[4/3] overflow-hidden rounded-xl mb-6 relative">
-                <Image
+                <img
                   src={service.image.src}
                   alt={service.title}
                   width={600}
