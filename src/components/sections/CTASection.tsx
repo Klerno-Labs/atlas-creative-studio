@@ -1,11 +1,11 @@
-const CTASection = () => {
+import React from "react";
+
+const CTASection: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-900 text-white text-center">
-      <h2 className="text-3xl font-bold">Ready to Start Your Project?</h2>
-      <p className="mt-4">Get in touch with us today to discuss your ideas and bring them to life.</p>
-      <a href="/contact" className="mt-6 inline-block px-6 py-3 text-lg font-bold text-black bg-yellow-500 rounded-lg hover:bg-yellow-400 transition">
-        Contact Us
-      </a>
+    <section className="py-16 md:py-24 lg:py-32 bg-[#D4AF37] text-center">
+      <h2 className="text-3xl font-bold text-[#050505]">Ready to Start a Project?</h2>
+      <p className="mt-4 text-lg text-[#050505]">Let's bring your vision to life.</p>
+      <button className="mt-6 px-6 py-3 bg-[#050505] text-[#FFFFFF] rounded-lg">Get Started</button>
     </section>
   );
 };

@@ -1,46 +1,31 @@
-"use client";
-
-import Link from "next/link";
-import { useState } from "react";
-import { cn } from "@/lib/cn";
-import { Menu, X } from "lucide-react";
+import React from "react";
+import { cn } from "@/lib/utils";
 import { images } from "@/config/images";
+import Link from "next/link";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Navbar: React.FC = () => {
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between bg-white/80 backdrop-blur-lg border-b border-gray-100 px-4 py-4">
-      <Link href="/" className="text-xl font-bold text-gray-900">
-        <img src={images.logo.src} alt="Atlas Creative Studio Logo" className="h-8" />
-      </Link>
-      <div className="hidden md:flex space-x-6">
-        <Link href="/work" className="text-gray-900 hover:text-primary">Work</Link>
-        <Link href="/services" className="text-gray-900 hover:text-primary">Services</Link>
-        <Link href="/about" className="text-gray-900 hover:text-primary">About</Link>
-        <Link href="/process" className="text-gray-900 hover:text-primary">Process</Link>
-        <Link href="/contact" className="text-gray-900 hover:text-primary">Contact</Link>
-      </div>
-      <button onClick={toggleMenu} className="md:hidden">
-        {isOpen ? <X className="h-6 w-6 text-gray-900" aria-label="Close menu" /> : <Menu className="h-6 w-6 text-gray-900" aria-label="Open menu" />}
-      </button>
-      {isOpen && (
-        <div className="fixed inset-0 z-40 bg-white/90 backdrop-blur-lg flex flex-col items-center justify-center space-y-4">
-          <button onClick={toggleMenu} className="absolute top-4 right-4">
-            <X className="h-6 w-6 text-gray-900" aria-label="Close menu" />
+    <header className="sticky top-0 z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+        <Link href="/" className="flex items-center">
+          <img src={images.logo.src} alt="Atlas Creative Studio Logo" className="h-10" />
+        </Link>
+        <nav className="hidden md:flex space-x-10">
+          <Link href="/work" className="text-[#F2F2F2] hover:underline">Work</Link>
+          <Link href="/services" className="text-[#F2F2F2] hover:underline">Services</Link>
+          <Link href="/about" className="text-[#F2F2F2] hover:underline">About</Link>
+          <Link href="/process" className="text-[#F2F2F2] hover:underline">Process</Link>
+          <Link href="/contact" className="text-[#F2F2F2] hover:underline">Contact</Link>
+        </nav>
+        <div className="md:hidden">
+          <button aria-label="Open menu" className="text-[#F2F2F2]">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
           </button>
-          <Link href="/work" className="text-gray-900 text-xl" onClick={toggleMenu}>Work</Link>
-          <Link href="/services" className="text-gray-900 text-xl" onClick={toggleMenu}>Services</Link>
-          <Link href="/about" className="text-gray-900 text-xl" onClick={toggleMenu}>About</Link>
-          <Link href="/process" className="text-gray-900 text-xl" onClick={toggleMenu}>Process</Link>
-          <Link href="/contact" className="text-gray-900 text-xl" onClick={toggleMenu}>Contact</Link>
         </div>
-      )}
-    </nav>
+      </div>
+    </header>
   );
 };
 
