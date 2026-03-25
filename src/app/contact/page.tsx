@@ -1,4 +1,4 @@
-import ContactForm from "@/components/Forms/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata = {
   title: "Atlas Creative Studio | Contact",

@@ -6,6 +6,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+import { useState, useEffect } from "react";
 const navLinks = [
   { name: "Work", href: "/work" },
   { name: "Services", href: "/services" },
