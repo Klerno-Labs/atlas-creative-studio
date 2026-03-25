@@ -47,7 +47,7 @@ export function ContactSection() {
               Ready to Elevate Your Brand?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We're currently accepting new projects. Let's discuss how we can help you achieve your digital goals.
+              We&apos;re currently accepting new projects. Let's discuss how we can help you achieve your digital goals.
             </p>
             <div className="space-y-4">
               <a href="mailto:hello@atlascreativestudio.com" className="block text-xl font-semibold text-primary hover:text-accent transition-colors">
@@ -68,7 +68,7 @@ export function ContactSection() {
                 </div>
                 <h3 className="text-2xl font-bold">Message Sent!</h3>
                 <p className="text-muted-foreground">
-                  We'll get back to you within 24 hours.
+                  We&apos;ll get back to you within 24 hours.
                 </p>
                 <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
                   Send Another

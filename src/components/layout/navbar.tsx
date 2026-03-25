@@ -6,7 +6,6 @@ import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-import { useState, useEffect } from "react";
 const navLinks = [
   { name: "Work", href: "/work" },
   { name: "Services", href: "/services" },
@@ -66,7 +65,7 @@ export function Navbar() {
             >
               <Link href="/contact">
                 <Phone className="h-4 w-4" />
-                <span>Let's Talk</span>
+                <span>Let&apos;s Talk</span>
               </Link>
             </Button>
             <button

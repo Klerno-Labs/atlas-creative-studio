@@ -20,7 +20,7 @@ export default function CTA() {
           Ready to elevate your brand?
         </h2>
         <p className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-12">
-          Let's build something extraordinary together. We are currently accepting new projects for Q4.
+          Let&apos;s build something extraordinary together. We are currently accepting new projects for Q4.
         </p>
         <Link
           href="/contact"

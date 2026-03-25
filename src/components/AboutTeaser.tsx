@@ -32,7 +32,7 @@ export default function AboutTeaser() {
             </h2>
             <div className="space-y-4 text-muted text-lg leading-relaxed">
               <p>
-                Founded in Houston, Atlas Creative Studio is a collective of designers, strategists, and developers obsessed with detail. We don't just build websites; we engineer digital ecosystems that drive growth and build lasting brand equity.
+                Founded in Houston, Atlas Creative Studio is a collective of designers, strategists, and developers obsessed with detail. We don&apos;t just build websites; we engineer digital ecosystems that drive growth and build lasting brand equity.
               </p>
               <p>
                 Our philosophy is simple: great design is invisible. It should feel natural, intuitive, and powerful, allowing your business to speak for itself without distraction.

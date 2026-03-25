@@ -58,7 +58,7 @@ export default function Navbar() {
             href="/contact"
             className="px-6 py-3 bg-white text-black font-heading font-bold text-sm tracking-wide hover:bg-accent hover:text-white transition-all duration-300 flex items-center gap-2"
           >
-            Let's Talk
+            Let&apos;s Talk
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
