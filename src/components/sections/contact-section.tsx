@@ -47,7 +47,7 @@ export function ContactSection() {
               Ready to Elevate Your Brand?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We&apos;re currently accepting new projects. Let's discuss how we can help you achieve your digital goals.
+              We&apos;re currently accepting new projects. Let&apos;s discuss how we can help you achieve your digital goals.
             </p>
             <div className="space-y-4">
               <a href="mailto:hello@atlascreativestudio.com" className="block text-xl font-semibold text-primary hover:text-accent transition-colors">
